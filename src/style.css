@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #202733;
+    --dark-grayish-blue: #313A48;
+    --neon-green: #53FFAA;
+    --light-cyan: #CEE3E9;
+}
+
+@font-face {
+    font-family: manrope;
+    src: url("./assets/Manrope-ExtraBold.ttf");
+}
+
+body {
+    background: var(--dark-blue);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.App {
+    background: var(--dark-grayish-blue);
+    width: 540px;
+    border-radius: 15px;
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.1);
+    padding: 48px;
+    padding-bottom: 72px;
+    position: relative;
+    font-family: manrope;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App .advice-number {
+    color: var(--neon-green);
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.App .advice-text {
+    color: var(--light-cyan);
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -.3px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.App .refresh-button {
+    background-image: url("./assets/icon-dice.svg");
+    background-color: var(--neon-green);
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    bottom: -32px;
+    transition: box-shadow .33s, transform .33s;
+}
+
+.App .refresh-button:hover {
+    box-shadow: 0px 0px 40px var(--neon-green);
+}
+
+.App .refresh-button:active {
+    transform: scale(.99);
+    box-shadow: 0px 0px 40px var(--dark-blue);
+}
