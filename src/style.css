@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,11 +72,38 @@ body {
     transition: box-shadow .33s, transform .33s;
 }
 
-.App .refresh-button:hover {
-    box-shadow: 0px 0px 40px var(--neon-green);
-}
-
 .App .refresh-button:active {
     transform: scale(.99);
-    box-shadow: 0px 0px 40px var(--dark-blue);
+}
+
+@media screen and (min-width: 900px) {
+    .App .refresh-button:hover {
+        box-shadow: 0px 0px 40px var(--neon-green);
+    }
+    
+    .App .refresh-button:active {
+        box-shadow: 0px 0px 40px var(--dark-blue);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .App {
+        width: 345px;
+    }
+
+    .App .advice-number {
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 3.5px;
+    }
+
+    .App .advice-text {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .App .refresh-button:active {
+        box-shadow: 0px 0px 40px var(--neon-green);
+    }
 }
