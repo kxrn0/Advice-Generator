@@ -44,4 +44,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@kxrn0](https://www.frontendmentor.io/profile/kxrn0)
-- Twitter - [@_by_me_0x177](https://www.twitter.com//_by_me_0x177)
+- Twitter - [@_by_me_0x177](https://www.twitter.com/_by_me_0x177)
