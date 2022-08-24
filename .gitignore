@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+rmbs_x32.j
 
 # Editor directories and files
 .vscode/*
